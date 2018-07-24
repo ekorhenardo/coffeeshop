@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'coffeeshop/style.css' %}" />
+
+{% if all_menu %}
+    <h1>Coffeeshop Menu</h1>
+    <ol>
+    {% for menu in all_menu%}
+            <li><a href="{% url 'detail' menu.id %}">{{ menu.menu_text }}, {{ menu.size_text }}, {{ menu.price }}</a></li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No menu are available.</p>
+{% endif %}
+
+<a href="{% url 'index' %}"><< Back</a>

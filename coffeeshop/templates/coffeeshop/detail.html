@@ -1,0 +1,17 @@
+<h1>Detail Order</h1>
+<ul>
+    <li>Name : {{ detail_menu.menu_text }}</li>
+    <li>Size : {{ detail_menu.size_text }}</li>
+    <li>Price : {{ detail_menu.price }}</li>
+</ul>
+
+<form action="{% url 'order' detail_menu.id %}" method="post">
+    {% csrf_token %}
+    Total<br>
+    <input type="number" name="quantity" /> <br>
+    <input type="submit" value="Submit" />
+</form>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<a href="{% url 'menu' %}"><< Back</a>

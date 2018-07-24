@@ -1,0 +1,11 @@
+<h1>Please Choose Type for Order</h1>
+
+{% if menu_type %}
+    <ol>
+        {% for type in menu_type %}
+            <li><a href="{% url 'group_order_result' type.id %}">{{ type.menu_type }}</a></li>
+        {% endfor %}
+    </ol>    
+{% endif %}
+
+<a href="{% url 'index' %}"><< Back</a>

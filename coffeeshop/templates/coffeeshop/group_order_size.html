@@ -1,0 +1,13 @@
+<h1>Please Choose Type for Size</h1>
+
+{% if all_size %}
+    <ol>
+    {% for size in all_size %}
+        <li><a href="{% url 'group_order_size_result' size %}">{{ size }}</a></li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No Order detected.</p>
+{% endif%}
+
+<a href="{% url 'index' %}"><< Back</a>

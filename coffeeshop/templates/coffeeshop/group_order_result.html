@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'coffeeshop/style.css' %}" />
+
+{% if order_result %}
+    <h1>History Order</h1>
+    <table>
+    <tr>
+        <th>Menu Name</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Order Date</th>
+        <th>Total</th>
+    </tr>
+    {% for result in order_result %}
+    <tr>
+        <td>{{ result.menu__menu_text }}</td>
+        <td>{{ result.menu__size_text }}</td>
+        <td>{{ result.menu__price }}</td>
+        <td>{{ result.order }}</td> 
+        <td>{{ result.order_date }}</td>
+        <td>{{ result.total }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <h4>Total Sales : {{ total_order }}</h4>
+{% endif %}
+
+<a href="{% url 'group_order_type' %}"><< Back</a>
