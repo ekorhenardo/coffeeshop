@@ -17,7 +17,7 @@ Setup Database
 I already provide with dummy databased in `db.sqlite3` file, but if you want to start with fresh data you can follow this step
 
 1. Delete `db.sqlite3` file
-1. Delete all files in migrations folder except `__init__.py`
+1. Delete all files in `coffeeshop/migrations` folder except `__init__.py`
 1. Run command `python3 manage.py makemigrations`
 1. Then run command `python3 manage.py migrate`
 
