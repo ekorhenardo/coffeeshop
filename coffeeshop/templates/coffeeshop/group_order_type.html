@@ -2,10 +2,12 @@
 
 {% if menu_type %}
     <ol>
-        {% for type in menu_type %}
-            <li><a href="{% url 'group_order_result' type.id %}">{{ type.menu_type }}</a></li>
-        {% endfor %}
-    </ol>    
+    {% for type in menu_type %}
+        <li><a href="{% url 'group_order_result' type.id %}">{{ type.menu_type }}</a></li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No Order detected.</p> 
 {% endif %}
 
 <a href="{% url 'index' %}"><< Back</a>
