@@ -1,7 +1,7 @@
 Coffeeshop Documentation
 ========================
 
-Simple Django Coffeeshop app with Menu, Order Submit, Order History (Total Sales), Group Order by Type and Size features
+Simple Django Coffeeshop application with Menu, Order Submit, Order History (Total Sales), Group Order by Type and Size features
 
 Setup
 ============
@@ -28,4 +28,4 @@ Run
 python3 manage.py runserver
 ```
 
-Check http://localhost:8000/coffeeshop to use the apps. Then visit http://localhost:8000/admin in your web browser to view/edit/create/delete database.
+Check http://localhost:8000/coffeeshop to use the application. Then visit http://localhost:8000/admin in your web browser to view/edit/create/delete database.
