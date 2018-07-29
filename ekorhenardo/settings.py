@@ -25,7 +25,7 @@ SECRET_KEY = '8n)$@&(3y*p#lgjadf3j$!6r^jdgn7^03!8z%9(yj(g(5v2e$f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ekorhenardo-coffeeshop.herokuapp.com']
 
 
 # Application definition
