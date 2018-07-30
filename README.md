@@ -1,7 +1,7 @@
 Coffeeshop Documentation
 ========================
 
-Simple Django Coffeeshop application with Menu, Order Submit, Order History (Total Sales), Group Order by Type and Size features
+Simple Django Coffeeshop application with Menu, Order Submit, Order History (Total Sales), Group Order by Type and Size features. You can see it in https://ekorhenardo-coffeeshop.herokuapp.com/coffeeshop/ and for admin panel https://ekorhenardo-coffeeshop.herokuapp.com/admin/
 
 Setup
 ============
